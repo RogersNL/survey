@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.3.1.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Give us dat info.</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>Please fill out all required fields(all fields required).</h1>
+
+    <form id="survey">
+      <div class="form-group">
+        <label for="name">Your Name</label>
+        <input id="name" class="form-control" type="text">
+      </div>
+
+      <label for="food">Choose Favorite Food</label>
+      <select class="form-control" id="food">
+        <option>Pizza</option>
+        <option>Copy-Pasta</option>
+        <option>Anti-matter</option>
+        <option>Sludge</option>
+      </select>
+
+      <label for="music">Whatcha Listen To?</label>
+      <div class="radio">
+        <label>
+          <input type="radio" name="music" value="EAR MUSIC" checked>
+          Ear Music
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="music" value="GOOD MUSIC">
+          Good Music
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="music" value="LOUD MUSIC">
+          Loud Music
+        </label>
+      </div>
+
+      <div class="form-group">
+        <label for="today">What is today?</label>
+        <input id="today" class="form-control" type="date">
+      </div>
+
+      <div class="form-group">
+        <label for="color">What is your favorite color?</label>
+        <input id="color" class="form-control" type="color">
+      </div>
+
+      <button type="submit" class="btn">Submit</button>
+
+    </form>
+
+    <div id="surveyDisplay">
+      <div class="well">
+        <p>ON THIS DAY, <span class="dateOutput"></span>, <span class="nameOutput">
+        </span> DECLAIRED THAT THEY LOVE EATING <span class="foodOutput"></span> WHILE
+        LISTENING TO <span class="musicOutput"></span></p>
+      </div>
+    </div>
+
+
+  </div>
+
+</div>
+</body>
+
+</html>
